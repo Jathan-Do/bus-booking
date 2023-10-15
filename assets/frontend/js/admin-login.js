@@ -10,6 +10,13 @@ $(document).on("click", "#loginbutton", function () {
 			email: email,
 			password: password,
 		};
-        console.log(obj);
+		$.post(BASE_URL + "adminlogin/login", obj, function (resp) {
+			let fb = JSON.parse(resp);
+			if (fb.status == "true") {
+				window.location.href = BASE_URL + "/admin";
+			} else {
+				alert("Username and password not match");
+			}
+		});
 	}
 });

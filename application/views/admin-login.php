@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Login</title>
     <link rel="stylesheet" href="<?php echo base_url('assets/frontend/css/bootstrap.css') ?>">
+    <script>
+        var BASE_URL = "<?php echo base_url(); ?>"
+    </script>
 </head>
 
 <body>

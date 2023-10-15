@@ -4,6 +4,10 @@ class Admin extends CI_Controller
     public function __constructor()
     {
         parent::__construct();
+        if (!$this->session->userdata('adminsession')) {
+            redirect(base_url('adminlogin'));
+            return false;
+        }
     }
     public function index()
     {
