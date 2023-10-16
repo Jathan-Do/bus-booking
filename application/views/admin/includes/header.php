@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="<?php echo base_url() ?>assets/admin/plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
   <link rel="stylesheet" href="<?php echo base_url() ?>assets/admin/plugins/summernote/summernote-bs4.min.css">
+  <ink rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap4.min.css">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -198,7 +199,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="<?php echo base_url('/admin') ?>" class="nav-link">
+              <a href="<?php echo base_url('/admin/locations') ?>" class="nav-link">
                 <i class="nav-icon fas fa-tachometer-alt"></i>
                 <p>
                   Location
