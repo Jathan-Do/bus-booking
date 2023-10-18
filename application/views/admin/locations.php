@@ -1,7 +1,7 @@
 <div class="content-wrapper">
     <div class="card mt-4">
         <div class="card-header">
-            <h2>Manage Locations <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-info btn-sm float-right">Add New</a></h2>
+            <h2>Manage Locations <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-success btn-sm float-right">New</a></h2>
         </div>
         <div class="card-body">
             <table id="example" class="table table-striped table-bordered" style="width:100%">
@@ -24,8 +24,8 @@
                                                                                                                                                                                                                                                                     echo "checked";
                                                                                                                                                                                                                                                                 } ?> /> Active</td>
                             <td>
-                                <a href="<?php echo base_url("admin/delete_location/" . $location['id']) ?>" class="btn btn-danger btn-sm">Delete</a> &nbsp;
-                                <a href="<?php echo base_url("admin/update_location/" . $location['id']) ?>" class="btn btn-info btn-sm">Update</a>
+                                <a href="<?php echo base_url("admin/update_location/" . $location['id']) ?>" class="btn btn-info btn-sm">Edit</a> &nbsp;
+                                <a href="<?php echo base_url("admin/delete_location/" . $location['id']) ?>" class="btn btn-danger btn-sm">Delete</a>
                             </td>
                         </tr>
                     <?php
@@ -53,7 +53,7 @@
                         <input type="text" name="name" required class="form-control" placeholder="Enter Name">
                     </div>
                     <div class="form-group">
-                        <button class="btn btn-info float-right">Add Location</button>
+                        <button class="btn btn-success float-right">Add Location</button>
                     </div>
                 </form>
             </div>

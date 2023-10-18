@@ -211,7 +211,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="<?php echo base_url('/admin') ?>" class="nav-link">
+              <a href="<?php echo base_url('/admin/bus_schedule') ?>" class="nav-link">
                 <i class="nav-icon fas fa-tachometer-alt"></i>
                 <p>
                   Bus Schedule
@@ -219,7 +219,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="<?php echo base_url('/admin') ?>" class="nav-link">
+              <a href="<?php echo base_url('/admin/bus_booking') ?>" class="nav-link">
                 <i class="nav-icon fas fa-tachometer-alt"></i>
                 <p>
                   Bus Booking
