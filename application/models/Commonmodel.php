@@ -13,4 +13,14 @@ class Commonmodel extends CI_Model
     {
         return $this->db->insert($table, $data);
     }
+    public function delete_data($table, $warr)
+    {
+        $this->db->where($warr);
+        $this->db->delete($table);
+    }
+    public function update_data($table, $data, $warr)
+    {
+        $this->db->where($warr);
+        return $this->db->update($table, $data);
+    }
 }
