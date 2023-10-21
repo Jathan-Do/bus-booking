@@ -1,0 +1,24 @@
+.category-link {
+  cursor: pointer;
+  transition: all 0.2s linear;
+  padding: 4px 0;
+}
+.category-link:hover {
+  background-color: var(--grey-main);
+}
+.category-item {
+  cursor: pointer;
+  transition: all 0.2s linear;
+  padding: 10px 0;
+}
+.category-item:hover {
+  background-color: var(--yellow-main);
+}
+.category-item:hover > * {
+  color: var(--orange-main);
+}
+.product-main-img {
+  width: 300px;
+  height: 250px;
+  border-radius: 10px 10px 0 0;
+}

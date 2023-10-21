@@ -1,0 +1,106 @@
+.product-frame {
+  margin-top: 100px;
+}
+.big-image {
+  width: 350px;
+  height: 100%;
+  position: relative;
+}
+.big-image img {
+  /* object-fit: cover; */
+  border-radius: 20px;
+}
+
+.product-desc {
+  max-width: 500px;
+  line-height: var(--main-lead);
+}
+.btn-cart-action {
+  width: inherit;
+  margin-top: 37px;
+  margin-bottom: 50px;
+}
+.btn-add-less {
+  width: 15%;
+  color: var(--yellow-main);
+  font-size: 24px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.btn-add-less:hover {
+  background-color: var(--yellow-main);
+  color: var(--orange-main);
+}
+.btn-add-less:first-child {
+  border-radius: 10px 0px 0px 10px;
+}
+.btn-add-less:last-child {
+  border-radius: 0px 10px 10px 0px;
+}
+.cart-span {
+  width: 70%;
+  background: rgba(217, 217, 217, 0.3);
+}
+.btn-add {
+  transition: all 0.2s linear;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.btn-add::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: var(--yellow-main);
+  transform-origin: 0 left right 0;
+  transform: scaleX(0);
+  transition: 0.25s linear;
+}
+.btn-add:hover::before {
+  transform: scaleX(1);
+}
+.btn-add:hover span {
+  color: var(--orange-main);
+  position: relative;
+  z-index: 10;
+}
+.btn-add:active {
+  animation: zoom-in-zoom-out 2.5s alternate ease;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.25, 1.25);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.preview-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.preview-img img {
+  border-radius: 10px;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  --bs-table-accent-bg: var(--orange-main);
+  color: var(--white);
+}
+.config-table {
+  border-radius: 10px;
+  margin-top: 50px;
+}

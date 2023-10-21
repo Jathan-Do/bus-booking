@@ -1,0 +1,108 @@
+.product-img:hover {
+  height: 150%;
+}
+.product-box {
+  border-radius: 20px;
+  filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.25));
+  box-shadow: 1px 1px 10px rgb(0 0 0 / 25%);
+  transition: all 0.2s linear;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.product-box:hover {
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.35);
+}
+.btn-product {
+  border-radius: 0px 0px 20px 20px;
+  transition: all 0.2s linear;
+}
+.btn-product:hover {
+  background-color: var(--yellow-main);
+  color: var(--orange-main);
+}
+.carousel-indicators [data-bs-target] {
+  height: 5px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 4rem;
+  height: 4rem;
+  color: var(--yellow-main);
+}
+
+/* COLLECTION */
+.hover {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 60%;
+}
+
+.hover-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.hover img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+
+.hover-content {
+  position: relative;
+  z-index: 99;
+}
+
+/* DEMO 1 ============================== */
+.hover-1 img {
+  width: 105%;
+  position: absolute;
+  top: 0;
+  left: -5%;
+  transition: all 0.3s;
+}
+
+.hover-1-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  transition: all 0.4s;
+}
+
+.hover-1 .hover-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hover-1-description {
+  transform: translateY(0.5rem);
+  transition: all 0.4s;
+  opacity: 0;
+}
+
+.hover-1:hover .hover-1-content {
+  bottom: 2rem;
+}
+
+.hover-1:hover .hover-1-description {
+  opacity: 1;
+  transform: none;
+}
+
+.hover-1:hover img {
+  left: 0;
+}
+
+.hover-1:hover .hover-overlay {
+  opacity: 0;
+}
