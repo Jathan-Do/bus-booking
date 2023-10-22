@@ -38,10 +38,10 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0  ">
                     <li class="nav-item ">
-                        <a class="nav-link  text-light" href="#">TRANG CHỦ</a>
+                        <a class="nav-link  text-light" href="<?php echo base_url('home') ?>">TRANG CHỦ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="/collection.html">LỊCH TRÌNH</a>
+                        <a class="nav-link text-light" href="<?php echo base_url('bookTicket') ?>">ĐẶT VÉ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-light" href="/contact.html">TRA CỨU VÉ</a>
@@ -53,7 +53,7 @@
                         <a class="nav-link text-light" href="/contact.html">HÓA ĐƠN</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="/contact.html">LIÊN HỆ</a>
+                        <a class="nav-link text-light" href="<?php echo base_url('contact') ?>">LIÊN HỆ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-light" href="/contact.html">VỀ CHÚNG TÔI</a>
@@ -216,7 +216,7 @@
     <footer class="container-fluid bg-nav-foot py-3">
         <div class="d-flex flex-column justify-content-center align-items-center">
             <img src="<?php echo base_url('/assets/images/logo.png') ?>" alt="Logo" class="mb-4" width="300" height="100">
-            <p class="text-yellow-main fs-3">BUY SMART - LIVE SMART</p>
+            <p class="text-yellow-main fs-6">© 2023|Bản quyền thuộc về Công ty Cổ Phần Xe khách Phương Trang - FUTA Bus Lines 2023</p>
         </div>
     </footer>
 
