@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <!-- <link rel="stylesheet" href="<?php echo base_url('assets/frontend/css/bootstrap.css') ?>">
-    <link rel="stylesheet" href="<?php echo base_url('assets/frontend/css/custom.css') ?>"> -->
+    <link rel="stylesheet" href="<?php echo base_url('assets/frontend/css/bootstrap.css') ?>">
+    <!-- <link rel="stylesheet" href="<?php echo base_url('assets/frontend/css/custom.css') ?>"> -->
     <!-- BOOTSTRAP -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="<?php echo base_url('/assets/frontend/bootstrap5/css/bootstrap.min.css') ?>">
@@ -46,7 +46,7 @@
                         <a class="nav-link text-light" href="<?php echo base_url('bookTicket') ?>">ĐẶT VÉ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="/contact.html">TRA CỨU VÉ</a>
+                        <a class="nav-link text-light" href="<?php echo base_url('searchTicket') ?>">TRA CỨU VÉ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-light" href="/contact.html">TIN TỨC</a>
@@ -55,7 +55,7 @@
                         <a class="nav-link text-light" href="/contact.html">HÓA ĐƠN</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="<?php echo base_url('contact') ?>">LIÊN HỆ</a>
+                        <a class="nav-link text-light" href="#">LIÊN HỆ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-light" href="/contact.html">VỀ CHÚNG TÔI</a>
@@ -118,7 +118,7 @@
                         </div>
                         <div class="row my-2">
                             <div class="col-12 ">
-                                <button class="btn btn-warning  d-block fw-semibold w-100 w-lg-auto" type="submit">Submit</button>
+                                <button class="btn btn-warning  d-block fw-semibold w-100 w-lg-auto" type="submit">Gửi</button>
                             </div>
                         </div>
                     </form>
@@ -127,7 +127,7 @@
                     <img src="<?php echo base_url('/assets/images/khuyenmai1.png') ?>" class="w-100">
                     <!-- ADDRESS -->
                     <div class="my-4">
-                        <h2 class="text-orange-main fw-semibold fs-3 my-3 border-bottom border-orange border-2">Địa chỉ
+                        <h2 class="text-orange-main fw-semibold fs-3 my-3 border-bottom border-warning border-2">Địa chỉ
                         </h2>
                         <p>CÔNG TY CỔ PHẦN XE KHÁCH PHƯƠNG TRANG - FUTA BUS LINES</p>
                         <p class="mt-3 fw-semibold">Số 01 Tô Hiến Thành, Phường 3, Thành phố Đà Lạt, Tỉnh Lâm Đồng, Việt Nam.</p>

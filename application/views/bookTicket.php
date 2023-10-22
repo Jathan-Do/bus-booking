@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <!-- <link rel="stylesheet" href="<?php echo base_url('assets/frontend/css/bootstrap.css') ?>"> -->
+    <link rel="stylesheet" href="<?php echo base_url('assets/frontend/css/bootstrap.css') ?>">
     <!-- <link rel="stylesheet" href="<?php echo base_url('assets/frontend/css/custom.css') ?>"> -->
     <!-- BOOTSTRAP -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
@@ -44,10 +44,10 @@
                         <a class="nav-link  text-light" href="<?php echo base_url('home') ?>">TRANG CHỦ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="<?php echo base_url('bookTicket') ?>">ĐẶT VÉ</a>
+                        <a class="nav-link text-light" href="#">ĐẶT VÉ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="/contact.html">TRA CỨU VÉ</a>
+                        <a class="nav-link text-light" href="<?php echo base_url('searchTicket') ?>">TRA CỨU VÉ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-light" href="/contact.html">TIN TỨC</a>
@@ -74,7 +74,7 @@
     <!-- BOOKING FORM -->
     <div id="text-form" class="pl-5 pr-5">
         <div class="form-container padding-divide pr-4">
-            <form action="<?php echo base_url("/") ?>" method="get">
+            <form action="<?php echo base_url("bookTicket") ?>" method="get">
                 <div class="inner-container">
                     <div class="row pl-5 inner-container-sub main-border">
                         <div class="col-sm-4">
@@ -113,10 +113,9 @@
                                 <input name="date" type="Date" class="form-control" required />
                             </div>
                         </div>
-                        <div class="col-sm-2 pt-3">
-                            <div class="form-group pt-2">
-                                <button type="submit" class="btn btn-warning">Tìm chuyến xe</button>
-                            </div>
+                        <div class="form-group col-sm-2 pt-4 mt-2">
+                            <button type="submit" class="btn btn-warning">Tìm chuyến xe</button>
+
                         </div>
                     </div>
                 </div>
@@ -161,7 +160,7 @@
                                     </td>
                                     <td><?php echo $schedule['amount'] ?></td>
                                     <td>
-                                        <button class="btn btn-warning btn-sm"> <a href="<?php echo base_url("bookTicket/booking/" . $schedule['id']) ?>">Đặt vé ngay</a></button>
+                                        <a class="btn btn-warning btn-sm text-decoration-none " href="<?php echo base_url("bookTicket/booking/" . $schedule['id']) ?>">Đặt vé ngay</a>
                                     </td>
                                 </tr>
 
@@ -171,7 +170,7 @@
                     }
                 } else {
                     ?>
-                    <div class="cart-body text-center fs-3 fw-semibold">
+                    <div class="cart-body text-orange-main text-center fs-3 fw-semibold">
                         <img src="<?php echo base_url('/assets/images/empty_list.svg') ?>" width="300" height="120">
                         <p>
                             Không có kết quả được tìm thấy

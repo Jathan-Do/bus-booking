@@ -45,7 +45,7 @@
                         <a class="nav-link text-light" href="<?php echo base_url('bookTicket') ?>">ĐẶT VÉ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="/contact.html">TRA CỨU VÉ</a>
+                        <a class="nav-link text-light" href="<?php echo base_url('contact') ?>">TRA CỨU VÉ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-light" href="/contact.html">TIN TỨC</a>

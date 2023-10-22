@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <link rel="stylesheet" href="<?php echo base_url('assets/frontend/css/bootstrap.css') ?>">
-    <link rel="stylesheet" href="<?php echo base_url('assets/frontend/css/custom.css') ?>">
+    <!-- <link rel="stylesheet" href="<?php echo base_url('assets/frontend/css/custom.css') ?>"> -->
     <!-- BOOTSTRAP -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="<?php echo base_url('/assets/frontend/bootstrap5/css/bootstrap.min.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('/assets/frontend/bootstrap5/css/bootstrap.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('/assets/frontend/bootstrap5/css/Home.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('/assets/frontend/bootstrap5/css/Products.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('/assets/frontend/bootstrap5/css/CartDetail.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('/assets/frontend/bootstrap5/css/collection.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('/assets/frontend/bootstrap5/css/contact.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('/assets/frontend/bootstrap5/css/style.css') ?>">
+
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,7 +46,7 @@
                         <a class="nav-link text-light" href="<?php echo base_url('bookTicket') ?>">ĐẶT VÉ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="<?php echo base_url('searchTicket') ?>">TRA CỨU VÉ</a>
+                        <a class="nav-link text-light" href="#">TRA CỨU VÉ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-light" href="/contact.html">TIN TỨC</a>
@@ -68,58 +70,69 @@
         </div>
     </nav>
 
-    <main>
-        <div class="container pt-5">
-            <div class="row g-2 pt-3">
-                <div class="col-xl-7">
-                    <p class="text-orange-main fw-semibold fs-2 mb-3 border-bottom border-orange border-2 pl-3">Thông tin khách hàng</p>
-                    <form action="<?php echo base_url('bookTicket/booking/' . $id) ?>" method="post" class=" pb-4 px-2">
-                        <div class="form-group col-md-10">
-                            <div class="form-outline">
-                                <label for="validationCustom01" class="form-label fw-semibold">Họ và tên</label>
-                                <input type="text" name="name" class="form-control" id="validationCustom01" placeholder="Nhập họ và tên ..." required />
-                            </div>
-                        </div>
-
-                        <div class="form-group col-md-10">
-                            <div class="form-outline">
-                                <label for="validationCustom03" class="form-label fw-semibold">Số điện thoại</label>
-                                <input type="text" name="mobile" class="form-control" id="validationCustom03" placeholder="09xx..." required />
-                            </div>
-                        </div>
-                        <div class="form-group col-md-10">
-                            <div class="form-outline">
-                                <label for="validationCustom05" class="form-label fw-semibold">Số lượng vé</label>
-                                <input type="text" name="numberofmember" class="form-control" id="validationCustom05" placeholder="Nhập số lượng vé" required />
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
-                                <label class="form-check-label" for="invalidCheck">
-                                    Chấp nhận điều khoản & chính sách bảo mật thông tin của FUTABuslines</label>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="">
-                                <button class="btn btn-warning d-block fw-semibold w-100 w-lg-auto mt-3" type="submit">Gửi</button>
-                            </div>
-                        </div>
-                    </form>
+    <main class="pl-5 pr-5">
+        <div class="container pt-5 pr-4">
+            <p class="text-orange-main fw-bold fs-4 mb-3 border-bottom border-warning border-2">
+                TRA CỨU THÔNG TIN ĐẶT VÉ
+            </p>
+            <form action="<?php echo base_url("searchTicket") ?>" method="get" class="row g-3 needs-validation pb-4  px-2">
+                <div class="form-group">
+                    <label class="form-label fw-semibold">Họ và tên </label>
+                    <input type="text" name="name" class="form-control" placeholder="Nguyễn ..." required />
                 </div>
-                <div class="col-xl-5 px-3">
-                    <p class="text-orange-main fw-semibold fs-2 mb-3 border-bottom border-orange border-2 text-center">Điều khoản & Lưu ý</p>
-                    <!-- ADDRESS -->
-                    <div class="my-4">
-                        <p class="mt-3 fw-semibold">(*) Quý khách vui lòng có mặt tại bến xuất phát của xe trước ít nhất 30 phút giờ xe khởi hành, mang theo thông báo đã thanh toán vé thành công có chứa mã vé được gửi từ hệ thống FUTA BUS LINE. Vui lòng liên hệ Trung tâm tổng đài <span class="text-orange-main">1900 6067</span> để được hỗ trợ. </br>
-
-                            </br> (*) Nếu quý khách có nhu cầu trung chuyển, vui lòng liên hệ Tổng đài trung chuyển <span class="text-orange-main">1900 6918</span> trước khi đặt vé. Chúng tôi không đón/trung chuyển tại những điểm xe trung chuyển không thể tới được.</p>
+                <div class="form-group">
+                    <label class="form-label fw-semibold">Số điện thoại</label>
+                    <input type="text" name="mobile" class="form-control" placeholder="0113114115" required />
+                </div>
+                <div class="row my-2">
+                    <div class="col-12  form-group">
+                        <button class="btn btn-warning d-block fw-semibold w-100 w-lg-auto" type="submit">Gửi</button>
                     </div>
                 </div>
+            </form>
+        </div>
+        <div class="container">
+            <div class="card-body">
+                <?php
+                if (count($users) > 0) {
+                    foreach ($users as $user) {
+                ?>
+                        <table class="table table-striped table-bordered" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>Ma xe</th>
+                                    <th>Name</th>
+                                    <th>mobile</th>
+                                    <th>so ve</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><?php echo $user['bus'] ?></td>
+                                    <td><?php echo $user['name'] ?></td>
+                                    <td><?php echo $user['mobile'] ?></td>
+                                    <td><?php echo $user['numberofmember'] ?></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    <?php
+                    }
+                } else {
+                    ?>
+                    <div class="cart-body text-center fs-3 fw-semibold mb-4">
+                        <img src="<?php echo base_url('/assets/images/empty_list.svg') ?>" width="300" height="120">
+                        <p class="text-orange-main">
+                            Không có kết quả được tìm thấy
+                        </p>
+                    </div>
+                <?php
+                }
+                ?>
             </div>
         </div>
-
     </main>
+
     <!-- FOOTER -->
     <footer class="container-fluid bg-nav-foot py-3">
         <div class="d-flex flex-column justify-content-center align-items-center">
