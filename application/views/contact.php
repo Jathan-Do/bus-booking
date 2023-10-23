@@ -41,12 +41,12 @@
                     <div class="col-12">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
-                            <label class="form-check-label" for="invalidCheck">Agree to terms and conditions</label>
+                            <label class="form-check-label" for="invalidCheck">Đồng ý với các điều khoản và điều kiện</label>
                         </div>
                     </div>
                     <div class="row my-2">
                         <div class="col-12 ">
-                            <button class="btn btn-warning  d-block fw-semibold w-100 w-lg-auto" type="submit">Gửi</button>
+                            <button class="btn btn-warning  d-block fw-semibold w-100 w-lg-auto" type="submit">Xác nhận</button>
                         </div>
                     </div>
                 </form>

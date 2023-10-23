@@ -100,7 +100,7 @@
                 <div class="cart-body text-orange-main text-center fs-3 fw-semibold">
                     <img src="<?php echo base_url('/assets/images/empty_list.svg') ?>" width="300" height="120">
                     <p>
-                        Không có kết quả được tìm thấy
+                        Không có kết quả nào được tìm thấy
                     </p>
                 </div>
             <?php

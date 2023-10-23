@@ -13,7 +13,7 @@
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.35);
 }
 .btn-product {
-  border-radius: 0px 0px 20px 20px;
+  border-radius: 10px;
   transition: all 0.2s linear;
 }
 .btn-product:hover {

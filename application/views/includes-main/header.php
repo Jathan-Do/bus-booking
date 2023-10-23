@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <link rel="stylesheet" href="<?php echo base_url('assets/frontend/css/bootstrap.css') ?>">
+    <!-- <link rel="stylesheet" href="<?php echo base_url('assets/frontend/css/bootstrap.css') ?>"> -->
     <link rel="stylesheet" href="<?php echo base_url('assets/frontend/css/custom.css') ?>">
     <!-- BOOTSTRAP -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
@@ -61,10 +61,28 @@
                     </li>
                 </ul>
 
-                <!-- Cart and User -->
-                <div class="d-flex flex align-items-center ms-auto my-lg-0 my-3">
-                    <a href="<?php echo base_url('#') ?>" class="btn btn-warning ms-4 d-block">Đăng nhập/Đăng ký</a>
-                </div>
+                <!-- Đăng ký/Đăng Nhập -->
+                <?php
+                if (isset($_SESSION['usersession'])) {
+                    $user = $_SESSION['usersession'];
+                ?>
+                    <div>
+                        <p class="fw-bold text-light btn border border-warning text-truncate position-relative" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="max-width:200px">
+                            <?php echo $user['name'] ?>
+                        </p>
+                        <div class="collapse bg-nav-foot radius-main position-absolute mt-2" id="collapseExample" style="width:100px">
+                            <a href="<?php echo base_url('signIn/logout') ?>" type="button" class="btn btn-warning d-block  ">Log Out</a>
+                        </div>
+                    </div>
+                <?php
+                } else {
+                ?>
+                    <div class="d-flex flex align-items-center ms-auto my-lg-0 my-3">
+                        <a href="<?php echo base_url('signIn') ?>" class="btn btn-warning ms-4 d-block">Đăng nhập/Đăng ký</a>
+                    </div>
+                <?php
+                }
+                ?>
             </div>
         </div>
     </nav>
