@@ -12,7 +12,7 @@
                 <label class="form-label fw-semibold">Số điện thoại</label>
                 <input type="text" name="mobile" class="form-control" placeholder="0113114115" required />
             </div>
-            <div class="row my-2">
+            <div class="row my-2 ps-2 pt-2">
                 <div class="col-12 form-group">
                     <button class="btn btn-warning d-block fw-semibold w-100 w-lg-auto" type="submit">Tra cứu</button>
                 </div>

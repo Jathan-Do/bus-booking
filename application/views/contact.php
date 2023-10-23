@@ -44,7 +44,7 @@
                             <label class="form-check-label" for="invalidCheck">Đồng ý với các điều khoản và điều kiện</label>
                         </div>
                     </div>
-                    <div class="row my-2">
+                    <div class="row my-2 ps-2">
                         <div class="col-12 ">
                             <button class="btn btn-warning  d-block fw-semibold w-100 w-lg-auto" type="submit">Xác nhận</button>
                         </div>

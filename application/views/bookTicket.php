@@ -1,11 +1,11 @@
 <!-- BOOKING FORM -->
-<div id="text-form" class="pl-5 pr-5">
-    <div class="form-container padding-divide pr-4">
+<div id="text-form" class="px-5">
+    <div class="form-container padding-divide ps-4">
         <form action="<?php echo base_url("bookTicket") ?>" method="get">
             <div class="inner-container">
                 <div class="row pl-5 inner-container-sub main-border">
                     <div class="col-sm-4">
-                        <div class="form-group">
+                        <div class="form-group ps-4 ms-2">
                             <label class="fw-semibold">Điểm đi</label>
                             <select name="start" class="form-control" required>
                                 <option value="">Chọn điểm đi</option>
@@ -40,7 +40,7 @@
                             <input name="date" type="Date" class="form-control" required />
                         </div>
                     </div>
-                    <div class="form-group col-sm-2 pt-4 mt-2">
+                    <div class="form-group col-sm-2 pt-4 ps-3 ms-0">
                         <button type="submit" class="btn btn-warning">Tìm chuyến xe</button>
 
                     </div>

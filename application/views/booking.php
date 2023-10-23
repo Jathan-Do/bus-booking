@@ -1,23 +1,23 @@
-<main>
-    <div class="container pt-5">
-        <div class="row g-2 pt-3">
+<main class="padding-divide">
+    <div class="container">
+        <div class="row g-2">
             <div class="col-xl-7">
                 <p class="text-orange-main fw-semibold fs-2 mb-3 border-bottom border-orange border-2 pl-3">Thông tin khách hàng</p>
                 <form action="<?php echo base_url('bookTicket/booking/' . $id) ?>" method="post" class=" pb-4 px-2">
-                    <div class="form-group col-md-10">
+                    <div class="form-group col-md-10 pb-2">
                         <div class="form-outline">
                             <label for="validationCustom01" class="form-label fw-semibold">Họ và tên</label>
                             <input type="text" name="name" class="form-control" id="validationCustom01" placeholder="Nhập họ và tên ..." required />
                         </div>
                     </div>
 
-                    <div class="form-group col-md-10">
+                    <div class="form-group col-md-10 pb-2">
                         <div class="form-outline">
                             <label for="validationCustom03" class="form-label fw-semibold">Số điện thoại</label>
                             <input type="text" name="mobile" class="form-control" id="validationCustom03" placeholder="09xx..." required />
                         </div>
                     </div>
-                    <div class="form-group col-md-10">
+                    <div class="form-group col-md-10 pb-2">
                         <div class="form-outline">
                             <label for="validationCustom05" class="form-label fw-semibold">Số lượng vé</label>
                             <input type="text" name="numberofmember" class="form-control" id="validationCustom05" placeholder="Nhập số lượng vé" required />
@@ -32,7 +32,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="">
-                            <button class="btn btn-warning d-block fw-semibold w-100 w-lg-auto mt-3" type="submit">Gửi</button>
+                            <button class="btn btn-warning d-block fw-semibold w-100 w-lg-auto mt-2" type="submit">Tiếp tục</button>
                         </div>
                     </div>
                 </form>

@@ -1,4 +1,5 @@
 :root {
+  --orange-light-main: #cb8864;
   --blue-main: #006a81;
   --orange-main: #ef5222;
   --yellow-main: #f7d662;
@@ -55,6 +56,9 @@ a:hover {
 }
 .bg-gif {
   background-color: #ffff00;
+}
+.bg-orange {
+  background-color: #faece8;
 }
 .bg-grey {
   background-color: #eee;
@@ -249,7 +253,7 @@ a:hover {
 .inner-container-sub{
   background-color:#fff ;
   margin: 0.7%;
-  padding-bottom: 3%;
+  padding-bottom: 4%;
   padding-top: 2%;
   border-radius: 20px ;
   

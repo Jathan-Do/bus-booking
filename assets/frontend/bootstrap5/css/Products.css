@@ -97,7 +97,7 @@
 }
 
 .table-striped > tbody > tr:nth-of-type(odd) > * {
-  --bs-table-accent-bg: var(--orange-main);
+  --bs-table-accent-bg: var(--orange-light-main);
   color: var(--white);
 }
 .config-table {
