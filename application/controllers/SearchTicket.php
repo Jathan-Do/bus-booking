@@ -12,6 +12,8 @@ class SearchTicket extends CI_Controller
         if (isset($getInfo['name'])) {
             $data['users'] = $this->CM->select_data("bus_booking", "*", $getInfo);
         }
+        $this->load->view('includes-main/header');
         $this->load->view('searchTicket', $data);
+        $this->load->view('includes-main/footer');
     }
 }

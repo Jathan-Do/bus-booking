@@ -13,7 +13,9 @@ class BookTicket extends CI_Controller
         if (isset($getInfo['start'])) {
             $data['schedules'] = $this->CM->select_data("bus_schedule", "*", $getInfo);
         }
+        $this->load->view('includes-main/header');
         $this->load->view('bookTicket', $data);
+        $this->load->view('includes-main/footer');
     }
     public function booking($id)
     {
@@ -24,11 +26,15 @@ class BookTicket extends CI_Controller
             redirect(base_url('bookTicket/success'));
         } else {
             $data['id'] = $id;
+            $this->load->view('includes-main/header');
             $this->load->view('booking', $data);
+            $this->load->view('includes-main/footer');
         }
     }
     public function success()
     {
+        $this->load->view('includes-main/header');
         $this->load->view('success');
+        $this->load->view('includes-main/footer');
     }
 }
