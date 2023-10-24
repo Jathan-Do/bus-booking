@@ -179,7 +179,7 @@
     <div class="padding-divide text-center">
         <h3 class="fw-bold fs-2 text-blue-main mb-1 text-uppercase">KẾT NỐI FUTA GROUP</h3>
         <p class="font-italic text-muted mb-5">Kết nối đa dạng hệ sinh thái FUTA Group qua App FUTA: mua vé Xe Phương Trang, Xe Buýt, Xe Hợp Đồng, Giao Hàng,...</p>
-        <div class="mt-10 ms-4">
+        <div class="mt-10">
             <img class="" src="<?php echo base_url('/assets/images/1_ketnoi.svg') ?>" />
         </div>
     </div>

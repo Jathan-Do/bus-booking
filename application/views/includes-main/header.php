@@ -57,7 +57,7 @@
                         <a class="nav-link text-light" href="<?php echo base_url('contact') ?>">LIÊN HỆ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="<?php echo base_url('#') ?>">VỀ CHÚNG TÔI</a>
+                        <a class="nav-link text-light" href="<?php echo base_url('aboutUs') ?>">VỀ CHÚNG TÔI</a>
                     </li>
                 </ul>
 
