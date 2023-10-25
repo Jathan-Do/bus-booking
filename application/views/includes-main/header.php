@@ -51,9 +51,6 @@
                         <a class="nav-link text-light" href="<?php echo base_url('#') ?>">TIN TỨC</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="<?php echo base_url('#') ?>">HÓA ĐƠN</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link text-light" href="<?php echo base_url('contact') ?>">LIÊN HỆ</a>
                     </li>
                     <li class="nav-item">

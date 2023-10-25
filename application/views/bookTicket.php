@@ -90,7 +90,6 @@
                                     <a class="btn btn-warning btn-sm text-decoration-none " href="<?php echo base_url("bookTicket/booking/" . $schedule['id']) ?>">Đặt vé ngay</a>
                                 </td>
                             </tr>
-
                         </tbody>
                     </table>
                 <?php

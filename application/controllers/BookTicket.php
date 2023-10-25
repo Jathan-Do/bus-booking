@@ -19,11 +19,14 @@ class BookTicket extends CI_Controller
     }
     public function booking($id)
     {
+        $data['schedules'] = $this->CM->select_data("bus_schedule", "*", array('id' => $id));
+        $data['locations'] = $this->CM->select_data("bms_location", "*");
+        $data['bookings'] = $this->CM->select_data("bus_booking", "*", array('bus' => $id));
         if ($this->input->method() == 'post') {
             $data = $_POST;
             $data['bus'] = $id;
             $this->CM->insert_data('bus_booking', $data);
-            redirect(base_url('bookTicket/success'));
+            redirect(base_url('bookTicket/success/' . $id));
         } else {
             $data['id'] = $id;
             $this->load->view('includes-main/header');
@@ -31,10 +34,19 @@ class BookTicket extends CI_Controller
             $this->load->view('includes-main/footer');
         }
     }
-    public function success()
+    public function success($id)
+    {
+        $data['schedules'] = $this->CM->select_data("bus_schedule", "*", array('id' => $id));
+        $data['locations'] = $this->CM->select_data("bms_location", "*");
+        $data['bookings'] = $this->CM->select_data("bus_booking", "*", array('bus' => $id));
+        $this->load->view('includes-main/header');
+        $this->load->view('success', $data);
+        $this->load->view('includes-main/footer');
+    }
+    public function successMessage()
     {
         $this->load->view('includes-main/header');
-        $this->load->view('success');
+        $this->load->view('successMessage');
         $this->load->view('includes-main/footer');
     }
 }
