@@ -1,5 +1,5 @@
-<main>
-    <div class="container py-5 px-5">
+<main class="padding-divide">
+    <div class="container px-5">
         <p class="text-orange-main text-center fw-bold fs-4 mb-3 border-bottom border-warning border-2">
             TRA CỨU THÔNG TIN ĐẶT VÉ
         </p>
