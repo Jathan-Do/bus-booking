@@ -226,6 +226,14 @@
                 </p>
               </a>
             </li>
+            <li class="nav-item">
+              <a href="<?php echo base_url('/admin/user_account') ?>" class="nav-link">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>
+                  User Account
+                </p>
+              </a>
+            </li>
           </ul>
           </li>
           </ul>

@@ -66,6 +66,18 @@ class Admin extends CI_Controller
             $this->load->view('admin/includes/footer');
         }
     }
+    public function user_account()
+    {
+        if ($this->input->method() == 'post') {
+            $this->CM->insert_data("user_account", $_POST);
+            echo json_encode(array("status" => 'true', "message" => "Data Successfully Inserted !", "reload" => base_url("admin/user_account")));
+        } else {
+            $data['users'] = $this->CM->select_data("user_account", "*");
+            $this->load->view('admin/includes/header');
+            $this->load->view('admin/user_account', $data);
+            $this->load->view('admin/includes/footer');
+        }
+    }
 
     //UPDATE FUNCTIONS
     public function update_location($id)
@@ -106,6 +118,18 @@ class Admin extends CI_Controller
             $this->load->view('admin/includes/footer');
         }
     }
+    public function update_user($id)
+    {
+        if ($this->input->method() == 'post') {
+            $this->CM->update_data("user_account", $_POST, array("id" => $id));
+            echo json_encode(array("status" => "true", "message" => "Data Successfully Updated !", "reload" => base_url("admin/user_account")));
+        } else {
+            $data['users'] = $this->CM->select_data("user_account", "*", array("id" => $id))[0];
+            $this->load->view('admin/includes/header');
+            $this->load->view('admin/edit_user_account', $data);
+            $this->load->view('admin/includes/footer');
+        }
+    }
 
     // DELETE FUNCTIONS
     public function delete_location($id)
@@ -118,11 +142,21 @@ class Admin extends CI_Controller
         $this->CM->delete_data("bus_schedule", array("id" => $id));
         redirect(base_url("admin/bus_schedule"));
     }
+    public function delete_user($id)
+    {
+        $this->CM->delete_data("user_account", array("id" => $id));
+        redirect(base_url("admin/user_account"));
+    }
 
     //CHANGE STATUS LOCATION
     public function location_status($id)
     {
         $this->CM->update_data("bms_location", $_POST, array("id" => $id));
+        echo json_encode(array("status" => true, "message" => "Success"));
+    }
+    public function user_status($id)
+    {
+        $this->CM->update_data("user_account", $_POST, array("id" => $id));
         echo json_encode(array("status" => true, "message" => "Success"));
     }
 }
