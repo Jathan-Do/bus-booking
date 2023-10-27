@@ -9,7 +9,7 @@ class SearchTicket extends CI_Controller
     {
         $data['users'] = array();
         $getInfo = $this->input->get();
-        if (isset($getInfo['name'])) {
+        if (isset($getInfo['mobile'], $getInfo['bus'])) {
             $data['users'] = $this->CM->select_data("bus_booking", "*", $getInfo);
         }
         $this->load->view('includes-main/header');

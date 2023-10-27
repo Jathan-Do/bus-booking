@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="<?php echo base_url('/assets/frontend/bootstrap5/css/contact.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('/assets/frontend/bootstrap5/css/style.css') ?>">
 
-
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" href="<?php echo base_url('/assets/images/icon.webp') ?>">
@@ -38,18 +37,18 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0  ">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                     <li class="nav-item ">
                         <a class="nav-link  text-light" href="<?php echo base_url('home') ?>">TRANG CHỦ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="<?php echo base_url('schedule') ?>">LỊCH TRÌNH</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-light" href="<?php echo base_url('bookTicket') ?>">ĐẶT VÉ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-light" href="<?php echo base_url('searchTicket') ?>">TRA CỨU VÉ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="<?php echo base_url('#') ?>">TIN TỨC</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-light" href="<?php echo base_url('contact') ?>">LIÊN HỆ</a>

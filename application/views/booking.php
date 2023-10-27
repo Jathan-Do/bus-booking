@@ -10,20 +10,20 @@
                         <div class="form-group col-md-10 pb-2">
                             <div class="form-outline">
                                 <label for="validationCustom01" class="form-label fw-semibold">Họ và tên</label>
-                                <input type="text" name="name" class="form-control" id="validationCustom01" placeholder="Nhập họ và tên ..." required />
+                                <input type="text" name="name" class="form-control" id="validationCustom01" placeholder="Vui lòng nhập họ và tên" required />
                             </div>
                         </div>
 
                         <div class="form-group col-md-10 pb-2">
                             <div class="form-outline">
                                 <label for="validationCustom03" class="form-label fw-semibold">Số điện thoại</label>
-                                <input type="text" name="mobile" class="form-control" id="validationCustom03" placeholder="09xx..." required />
+                                <input type="text" name="mobile" class="form-control" id="validationCustom03" placeholder="Vui lòng nhập số điện thoại" required />
                             </div>
                         </div>
                         <div class="form-group col-md-10 pb-2">
                             <div class="form-outline">
                                 <label for="validationCustom05" class="form-label fw-semibold">Số lượng vé</label>
-                                <input type="text" name="numberofmember" class="form-control" id="validationCustom05" placeholder="Nhập số lượng vé" required />
+                                <input type="text" name="numberofmember" class="form-control" id="validationCustom05" placeholder="Vui lòng nhập số lượng vé" required />
                             </div>
                         </div>
                         <div class="col-12">

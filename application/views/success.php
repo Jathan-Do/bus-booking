@@ -34,15 +34,18 @@
                     <i class="fa-solid fa-circle-info" style="color: #076b7d;"></i>
                 </div>
                 <div class=" d-flex justify-content-between align-items-center mb-1">
-                    <p class="pe-5">Tuyến xe:</p>
-                    <p class="ps-5 ms-5"><?php
-                                            foreach ($schedules as $schedule) {
-                                                foreach ($locations as $location) {
-                                                    if ($location['id'] == $schedule['start']) {
-                                                        echo $location['name'] . " => ";
-                                                    }
-                                                }
-                                            } ?></p>
+                    <p class="pe-5">Tuyến xe</p>
+                    <p class="ps-5 ms-5">
+                        <?php
+                        foreach ($schedules as $schedule) {
+                            foreach ($locations as $location) {
+                                if ($location['id'] == $schedule['start']) {
+                                    echo $location['name'];
+                                }
+                            }
+                        } ?>
+                        <span class="ms-2">=></span>
+                    </p>
                     <p><?php
                         foreach ($schedules as $schedule) {
                             foreach ($locations as $location) {
@@ -54,7 +57,7 @@
                 </div>
 
                 <div class=" d-flex justify-content-between align-items-center mb-1">
-                    <p>Thời gian</p>
+                    <p>Thời gian đặt</p>
                     <p>
                         <?php
                         $latestBooking = end($bookings); // Lấy lần đặt gần nhất
@@ -110,7 +113,8 @@
                         <?php
                         foreach ($schedules as $schedule) {
                             foreach ($bookings as $booking) {
-                                $totalPrice = $schedule['amount'] * (float)$booking['numberofmember'];
+                                $latestBooking = end($bookings);
+                                $totalPrice = $schedule['amount'] * (float)($latestBooking['numberofmember']);
                                 echo $totalPrice . "đ";
                                 break;
                             }
@@ -129,7 +133,8 @@
                         <?php
                         foreach ($schedules as $schedule) {
                             foreach ($bookings as $booking) {
-                                $totalPrice = $schedule['amount'] * (float)$booking['numberofmember'];
+                                $latestBooking = end($bookings);
+                                $totalPrice = $schedule['amount'] * (float)($latestBooking['numberofmember']);
                                 echo $totalPrice . "đ";
                                 break;
                             }
