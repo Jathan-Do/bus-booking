@@ -137,6 +137,11 @@ class Admin extends CI_Controller
         $this->CM->delete_data("bms_location", array("id" => $id));
         redirect(base_url("admin/locations"));
     }
+    public function bus_booking_delete($id)
+    {
+        $this->CM->delete_data("bus_booking", array("id" => $id));
+        redirect(base_url("admin/bus_booking"));
+    }
     public function bus_location_delete($id)
     {
         $this->CM->delete_data("bus_schedule", array("id" => $id));

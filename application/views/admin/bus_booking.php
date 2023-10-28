@@ -13,7 +13,8 @@
                         <th>Start</th>
                         <th>End</th>
                         <th>Amount</th>
-                        <th>Bus</th>
+                        <th>Bus Number</th>
+                        <th>Bus Ticket ID</th>
                         <th>Number Of Member</th>
                         <th>Status</th>
                         <th>Action</th>
@@ -39,8 +40,9 @@
                                         echo $location["name"];
                                     }
                                 } ?></td>
-                            <td><?php echo $booking['amount']; ?></td>
+                            <td><?php echo $booking['amount'] * $booking['numberofmember']; ?></td>
                             <td><?php echo $booking['bus_number']; ?></td>
+                            <td><?php echo $booking['bus']; ?></td>
                             <td><?php echo $booking['numberofmember']; ?></td>
                             <td>
                                 <?php if ($booking['status'] == 0) {
@@ -52,6 +54,7 @@
                             </td>
                             <td>
                                 <a href="<?php echo base_url("admin/edit_booking/" . $booking['id']) ?>" class="btn btn-info btn-sm">Edit</a>
+                                <a href="<?php echo base_url("admin/bus_booking_delete/" . $booking['id']) ?>" class="btn btn-danger btn-sm">Delete</a>
                             </td>
                         </tr>
                     <?php

@@ -101,6 +101,17 @@
                         ?>
                     </p>
                 </div>
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                    <p>Mã vé</p>
+                    <p>
+                        <?php
+                        $latestBooking = end($schedules); // Lấy lần đặt gần nhất
+                        if ($latestBooking !== false) {
+                            echo $latestBooking['id'];
+                        }
+                        ?>
+                    </p>
+                </div>
                 <hr class="my-3">
                 <div class="d-flex justify-content-between align-items-center mb-1">
                     <h5>Chi tiết giá</h5>

@@ -1,5 +1,5 @@
 <footer class="main-footer">
-  <strong>Copyright &copy; 2023 <a href="https://adminlte.io">My Bus Ticket</a>.</strong>
+  <strong>Copyright &copy; 2023 <a href="<?php echo base_url('home') ?>">FUTA Bus Lines</a>.</strong>
   All rights reserved.
   <div class="float-right d-none d-sm-inline-block">
     <b>Version</b> 3.2.0

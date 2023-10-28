@@ -9,7 +9,7 @@
                 <input type="text" name="mobile" class="form-control" placeholder="Vui lòng nhập số điện thoại" required />
             </div>
             <div class="form-group">
-                <label class="form-label fw-semibold">Mã số vé xe</label>
+                <label class="form-label fw-semibold">Mã số vé</label>
                 <input type="text" name="bus" class="form-control" placeholder="Vui lòng nhập mã vé" required />
             </div>
             <div class="row my-2 ps-2 pt-2">
@@ -27,7 +27,7 @@
                         <th>STT</th>
                         <th>Họ và Tên</th>
                         <th>Số điện thoại</th>
-                        <th>Mã số xe</th>
+                        <th>Mã số vé</th>
                         <th>Số vé</th>
                         <th>Thời gian đặt vé</th>
                     </tr>

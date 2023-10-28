@@ -2,11 +2,11 @@
     <div class="container">
         <div class="row g-2">
             <div class="col-xl-6">
-                <p class="text-orange-main fw-semibold fs-2 mb-3 border-bottom border-orange border-2 pl-3">Thông tin khách hàng</p>
+                <p class="text-orange-main fw-semibold fs-2 mb-3 border-bottom border-orange border-2">Thông tin khách hàng</p>
 
                 <div class="container">
                     <!-- CHECKOUT DETAIL -->
-                    <form action="<?php echo base_url('bookTicket/booking/' . $id) ?>" method="post" id="checkoutDetail" class=" pb-4 px-2">
+                    <form action="<?php echo base_url('bookTicket/booking/' . $id) ?>" method="post" id="checkoutDetail" class=" pb-4">
                         <div class="form-group col-md-10 pb-2">
                             <div class="form-outline">
                                 <label for="validationCustom01" class="form-label fw-semibold">Họ và tên</label>
