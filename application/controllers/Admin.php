@@ -50,6 +50,12 @@ class Admin extends CI_Controller
             $this->load->view('admin/bus_schedule', $data);
             $this->load->view('admin/includes/footer');
         }
+        // Sau khi cập nhật thành công, lấy dữ liệu mới từ cơ sở dữ liệu
+        $updatedData = $this->CM->select_data("bus_schedule", "*");
+        // Đường dẫn đến file JSON
+        $jsonFilePath = './assets/bus-schedule.json';
+        // Gọi hàm cập nhật file JSON
+        $this->updateJsonFile($updatedData, $jsonFilePath);
     }
     public function bus_booking()
     {
@@ -104,6 +110,13 @@ class Admin extends CI_Controller
             $this->load->view('admin/bus_schedule_edit', $data);
             $this->load->view('admin/includes/footer');
         }
+
+        // Sau khi cập nhật thành công, lấy dữ liệu mới từ cơ sở dữ liệu
+        $updatedData = $this->CM->select_data("bus_schedule", "*");
+        // Đường dẫn đến file JSON
+        $jsonFilePath = './assets/bus-schedule.json';
+        // Gọi hàm cập nhật file JSON
+        $this->updateJsonFile($updatedData, $jsonFilePath);
     }
     public function edit_booking($id)
     {
@@ -146,6 +159,12 @@ class Admin extends CI_Controller
     {
         $this->CM->delete_data("bus_schedule", array("id" => $id));
         redirect(base_url("admin/bus_schedule"));
+        // Sau khi cập nhật thành công, lấy dữ liệu mới từ cơ sở dữ liệu
+        $updatedData = $this->CM->select_data("bus_schedule", "*");
+        // Đường dẫn đến file JSON
+        $jsonFilePath = './assets/bus-schedule.json';
+        // Gọi hàm cập nhật file JSON
+        $this->updateJsonFile($updatedData, $jsonFilePath);
     }
     public function delete_user($id)
     {
@@ -163,5 +182,16 @@ class Admin extends CI_Controller
     {
         $this->CM->update_data("user_account", $_POST, array("id" => $id));
         echo json_encode(array("status" => true, "message" => "Success"));
+    }
+
+    //JSON 
+    private function updateJsonFile($data, $jsonFilePath)
+    {
+        $jsonContent = json_encode($data, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+        if (file_put_contents($jsonFilePath, $jsonContent)) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
