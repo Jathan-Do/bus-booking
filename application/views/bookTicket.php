@@ -87,7 +87,18 @@
                                 </td>
                                 <td><?php echo $schedule['amount'] ?></td>
                                 <td>
-                                    <a class="btn btn-warning btn-sm text-decoration-none " href="<?php echo base_url("bookTicket/booking/" . $schedule['id']) ?>">Đặt vé ngay</a>
+                                    <?php
+                                    if (isset($_SESSION['usersession'])) {
+                                        $user = $_SESSION['usersession'];
+                                    ?>
+                                        <a class="btn btn-warning btn-sm text-decoration-none " href="<?php echo base_url("bookTicket/booking/" . $schedule['id']) ?>">Đặt vé ngay</a>
+                                    <?php
+                                    } else {
+                                    ?>
+                                        <a class="btn btn-warning btn-sm text-decoration-none" onclick="showAlert();" href="#">Đặt vé ngay</a>
+                                    <?php
+                                    }
+                                    ?>
                                 </td>
                             </tr>
                         </tbody>
@@ -108,3 +119,6 @@
         </div>
     </div>
 </div>
+
+<script src="<?php echo base_url('assets/frontend/js/bootstrap.js') ?>"></script>
+<script src="<?php echo base_url('assets/frontend/js/bookTicket.js') ?>"></script>

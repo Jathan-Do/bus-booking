@@ -1,0 +1,74 @@
+[
+    {
+        "id": "10",
+        "bus_number": "AN_HCM",
+        "start": "47",
+        "end": "48",
+        "date": "2023-10-28",
+        "amount": "285000",
+        "created_at": "2023-10-28 22:30:40"
+    },
+    {
+        "id": "12",
+        "bus_number": "BL_HCM",
+        "start": "49",
+        "end": "48",
+        "date": "2023-10-28",
+        "amount": "190000",
+        "created_at": "2023-10-28 22:34:06"
+    },
+    {
+        "id": "13",
+        "bus_number": "BL_ĐN",
+        "start": "51",
+        "end": "50",
+        "date": "2023-10-28",
+        "amount": "430000",
+        "created_at": "2023-10-28 22:34:54"
+    },
+    {
+        "id": "14",
+        "bus_number": "BL_HUE",
+        "start": "51",
+        "end": "52",
+        "date": "2023-10-28",
+        "amount": "460000",
+        "created_at": "2023-10-28 22:35:27"
+    },
+    {
+        "id": "15",
+        "bus_number": "BL_QN",
+        "start": "51",
+        "end": "53",
+        "date": "2023-10-28",
+        "amount": "430000",
+        "created_at": "2023-10-28 22:36:05"
+    },
+    {
+        "id": "16",
+        "bus_number": "BT_HCM",
+        "start": "54",
+        "end": "48",
+        "date": "2023-10-28",
+        "amount": "230000",
+        "created_at": "2023-10-28 22:36:58"
+    },
+    {
+        "id": "17",
+        "bus_number": "CM_CT",
+        "start": "58",
+        "end": "57",
+        "date": "2023-10-28",
+        "amount": "160000",
+        "created_at": "2023-10-28 22:37:39"
+    },
+    {
+        "id": "18",
+        "bus_number": "ĐN_HN",
+        "start": "50",
+        "end": "56",
+        "date": "2023-10-28",
+        "amount": "400000",
+        "created_at": "2023-10-28 22:38:47"
+    }
+]
