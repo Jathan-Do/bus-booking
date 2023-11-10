@@ -17,16 +17,14 @@ class Admin extends CI_Controller
     }
 
     //INSERT FUNCTIONS
-    public function locations($type = '')
+    public function locations()
     {
         if ($this->input->method() == 'post') {
-            if ($type == 'insert') {
-                $resp = $this->CM->insert_data("bms_location", $this->input->post());
-                if ($resp) {
-                    echo json_encode(array("status" => 'true', "message" => "Data Successfully Inserted !", "reload" => base_url("admin/locations")));
-                } else {
-                    echo json_encode(array("status" => 'false', "message" => "Please Try Again !"));
-                }
+            $resp = $this->CM->insert_data("bms_location", $this->input->post());
+            if ($resp) {
+                echo json_encode(array("status" => 'true', "message" => "Data Successfully Inserted !", "reload" => base_url("admin/locations")));
+            } else {
+                echo json_encode(array("status" => 'false', "message" => "Please Try Again !"));
             }
         } else {
             $this->db->order_by("id", "desc");
