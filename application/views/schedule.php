@@ -70,7 +70,7 @@
                                     <?php ?>
                                 </td> -->
                                 <td><?php echo $schedule['amount'] ?></td>
-                                <td><?php echo $schedule['date'] ?></td>
+                                <td><?php echo date("M-d, Y", strtotime($schedule['date'])) ?></td>
                                 <td>
                                     <?php
                                     if (isset($_SESSION['usersession'])) {
