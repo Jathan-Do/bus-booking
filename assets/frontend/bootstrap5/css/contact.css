@@ -1,3 +1,9 @@
 .border-blue {
   border-color: var(--blue-main) !important;
 }
+.border-orange {
+  border-color: var(--orange-main) !important;
+}
+.background-futa{
+  background-color: #07613f;
+}

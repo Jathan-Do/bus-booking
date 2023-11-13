@@ -46,7 +46,7 @@
                     </div>
                     <div class="row my-2 ps-2">
                         <div class="col-12 ">
-                            <button class="btn btn-warning  d-block fw-semibold w-100 w-lg-auto" type="submit">Xác nhận</button>
+                            <button class="btn btn-warning d-block fw-semibold w-100 w-lg-auto" type="submit">Xác nhận</button>
                         </div>
                     </div>
                 </form>
