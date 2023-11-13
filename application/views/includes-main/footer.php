@@ -78,7 +78,7 @@
                  <h6 class="mb-2 text-success">Hỗ trợ</h6>
                  <ul class="px-3 ">
                      <li class="my-3">
-                         <a class="text-decoration-none text-dark" href="">Tra cúu thông tin đặt vé</a>
+                         <a class="text-decoration-none text-dark" href="">Tra cứu thông tin đặt vé</a>
                      </li>
                      <li class="my-3">
                          <a class="text-decoration-none text-dark" href="">Điều khoản sử dụng</a>
