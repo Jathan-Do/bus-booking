@@ -38,6 +38,7 @@
                         <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input">
                             <label class="form-check-label">Ghi nhớ tài khoản</label>
+
                         </div>
                         <button id="loginbutton" class="border-0 fs-4 fw-bold text-yellow-main bg-nav-foot w-100 d-block text-center py-2 btn-product text-decoration-none">Đăng nhập</button>
                         <span>
@@ -97,6 +98,7 @@
             </div>
         </div>
     </div>
+
 </main>
 <script src="<?php echo base_url('assets/frontend/js/jquery.js') ?>"></script>
 <script src="<?php echo base_url('assets/frontend/js/bootstrap.js') ?>"></script>

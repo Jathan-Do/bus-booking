@@ -67,9 +67,12 @@
                         <p class="fw-bold text-light btn border border-warning text-truncate position-relative" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="max-width:200px">
                             <?php echo $user['name'] ?>
                         </p>
-                        <div class="collapse bg-nav-foot radius-main position-absolute mt-2" id="collapseExample" style="width:100px">
-                            <a href="<?php echo base_url('signIn/logout') ?>" type="button" class="btn btn-warning d-block  ">Log Out</a>
+                        <div class="collapse radius-main position-absolute mt-2" id="collapseExample" style="width:180px">
+                            <a href="<?php echo base_url('infoAccount') ?>" type="button" class="btn btn-warning d-block">Thông tin tài khoản</a>
+                            <a href="<?php echo base_url('updatePassword') ?>" type="button" class="btn btn-warning d-block mt-2 ">Đổi mật khẩu</a>
+                            <a href="<?php echo base_url('signIn/logout') ?>" type="button" class="btn btn-warning d-block mt-2 ">Đăng xuất</a>
                         </div>
+
                     </div>
                 <?php
                 } else {
