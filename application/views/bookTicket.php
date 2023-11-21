@@ -1,6 +1,6 @@
 <!-- BOOKING FORM -->
 <div id="text-form" class="px-5">
-    <div class="form-container padding-divide ps-4">
+    <div class="form-container padding-divide m-auto">
         <form action="<?php echo base_url("bookTicket") ?>" method="get">
             <div class="inner-container">
                 <div class="row pl-5 inner-container-sub main-border">
@@ -40,7 +40,7 @@
                             <input name="date" type="Date" class="form-control" required />
                         </div>
                     </div>
-                    <div class="form-group col-sm-2 pt-4 ps-3 ms-0">
+                    <div class="form-group col-sm-2 pt-4 ps-5 ms-0">
                         <button type="submit" class="btn btn-warning">Tìm chuyến xe</button>
 
                     </div>

@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-lg-4 form-group">
                 <div>
-                    <img class="imageLoad" style="object-fit: cover; object-position: center;width: 150px; height:150px; border: 4px solid #f2726a; overflow: hidden; margin: 0 auto; border-radius: 50%; cursor: pointer">
+                    <img src=<?php echo base_url('/assets/images/avatar.png') ?> class="imageLoad" style="object-fit: cover; object-position: center;width: 150px; height:150px; border: 4px solid #f2726a; overflow: hidden; margin: 0 auto; border-radius: 50%; cursor: pointer">
                 </div>
                 <label class="form-label btn btn-warning ms-4 mt-2">
                     Chọn ảnh
@@ -25,7 +25,7 @@
                 ?>
                     <p class="form-label fw-semibold pb-2">: <?php echo $user['name'] ?></p>
                     <p class="form-label fw-semibold pb-2">: <?php echo $user['email'] ?></p>
-                    <p class="form-label fw-semibold">: Đang hoạt động</p>
+                    <p class="text-success form-label fw-semibold">: Đang hoạt động</p>
                 <?php
                 }
                 ?>
